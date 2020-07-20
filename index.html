@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<title>psd to html - test1</title>
+	<link rel="shotcut icon" type="image/x-icon" href="resources/img/street-light.png">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">  
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<!-- VENDORS FILES -->
+	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+	<!-- RESOURCES FILES -->
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/responsive.css">
+</head>
+<body>
+	<!--START HEADER SECTION-->
+	<header>
+		<nav class="menubar">
+		    <div id= "navmenu">
+		        <ul class="main-nav">
+		            <li><a href="">menu</a></li>
+		            <li><a href="">our story</a></li>
+		            <li class="logo_box"><a class="logo" href=""><img src="resources/img/logo.png" alt="Logo"></a></li>
+		            <li><a href="">events</a></li>
+		            <li><a href="">contact</a></li>
+		        </ul>
+		        <div class="mobile-menu">
+					<span onclick="openNav()">&#9776;</span>
+					<img class="mobile-logo" src="resources/img/logo.png" alt="Logo">
+					<div id="mynav" class="mobile-overlay">
+						<a href="javascript:void()" onclick="closeNav()" class="closebtn">&times;</a>
+						<div class="overlay-content">
+							<a onclick="closeNav()" href="">menu</a>	
+							<a onclick="closeNav()" href="">our story</a>	
+							<a onclick="closeNav()" href="">events</a>	
+							<a onclick="closeNav()" href="">contact</a>	
+						</div>
+					</div>
+				</div>
+		    </div>
+		</nav>
+		<div class="row">
+				<div class="welcome-content">
+					<h1>eat delicious</h1>
+					<h3>stay healthy!</h3>
+				</div>
+			</div>
+	</header>
+	<!--END HEADER SECTION-->
+	<!--START OUR FAVOURITES SECTION-->
+	<section class="favourites-section" id="favourites">
+		<div class="row title">
+			<h2>OUR FAVOURITES</h2>
+		</div>
+		<div class="row fix">
+			<div class="col span_1_of_4">
+				<div class="single_card">
+					<div class="favourites-bg-img favourites-bg-img_cmn">
+					<h3 class="bottom-left">Noodle Pasta</h3>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim magna, iaculis vel dolor nec, imperdiet pellentesque dui. </p>
+				</div>
+			</div>
+			<div class="col span_1_of_4">
+				<div class="single_card">
+					<div class="favourites-bg-img2 favourites-bg-img_cmn">
+					<h3 class="bottom-left">Mango Cake</h3>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim magna, iaculis vel dolor nec, imperdiet pellentesque dui. </p>
+				</div>
+			</div>
+			<div class="col span_1_of_4">
+				<div class="single_card">
+					<div class="favourites-bg-img3 favourites-bg-img_cmn">
+					<h3 class="bottom-left">Cupcakes</h3>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim magna, iaculis vel dolor nec, imperdiet pellentesque dui. </p>
+				</div>
+			</div>
+			<div class="col span_1_of_4">
+				<div class="single_card">
+					<div class="favourites-bg-img4 favourites-bg-img_cmn">
+					<h3 class="bottom-left">Croissants</h3>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim magna, iaculis vel dolor nec, imperdiet pellentesque dui. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END OUR FAVOURITES SECTION-->
+	<!--START OUR TASTY MENU SECTION-->
+	<section class="testymenu-section" id="testymenu">
+		<div class="row title">
+			<h2>Our Tasty Menu</h2>
+		</div>
+		<div class="row fix">
+			<div class="col span_1_of_3">
+				<div class="menu_single_card">
+					<img class="menu_single_card_img" src="resources/img/testy_menu1.jpg">
+					<div class="overlay">
+					    <div class="text">Drinks</div>
+					</div>
+				</div>
+			</div>
+			<div class="col span_1_of_3">
+				<div class="menu_single_card">
+					<img src="resources/img/testy_menu2.jpg">
+					<div class="overlay">
+					    <div class="text">Snacks</div>
+					</div>
+				</div>
+			</div>
+			<div class="col span_1_of_3">
+				<div class="menu_single_card">
+					<img src="resources/img/testy_menu3.jpg">
+					<div class="overlay">
+					    <div class="text">Lunch</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END OUR TASTY MENU SECTION-->
+	<!--START CUSTOMER REVIEWS SECTION-->
+	<section class="review-section">
+		<div class="row title">
+			<h2>CUSTOMER REVIEWS</h2>
+		</div>
+		<div class="row review-box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel convallis libero. Donec vitae imperdiet lorem, id tincidunt eros. Duis a quam ut purus pharetra sodales.  Mauris erat leo, molestie in pretium tempor, aliquam id risus. Pellentesque ac semper tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean arcu nunc, venenatis eu venenatis lacinia, dapibus sit amet nulla.</p>
+			<h5>Jhon Smith</h5>
+		</div>
+	</section>
+	<!--END CUSTOMER ReEVIEWS SECTION-->
+	<!--START IMAGE BOX SECTION-->
+	<section class="image-box-section"> 
+		<div class="img_row">
+		  <div class="column">
+		    <img class="gallery-1" src="resources/img/grid_img1.jpg">
+		  </div>
+		  <div class="column">
+		    <div class="img_row">
+		    	<div class="column">
+		    		<img class="gallery-2" src="resources/img/grid_img2.1.jpg">
+		    	</div>
+		    	<div class="column">
+		    		<img class="gallery-3" src="resources/img/grid_img2.2.jpg">
+		    	</div>
+		    </div>
+		    <img class="gallery-4" src="resources/img/grid_img3.jpg">
+		  </div>
+		  <div class="column">
+		    <img class="gallery-5" src="resources/img/grid_img4.jpg">
+		  </div>
+		</div>
+	</section>
+	<!--END IMAGE BOX SECTION-->
+	<div style="width: 100%; color: red"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=320&amp;hl=en&amp;q=Ambarkhana,%20sylhet,%20Bangladesh+(cafe)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="280" frameborder="0"></iframe></div>
+	<!--START FOOTER SECTION-->
+	<section class="footer-section">
+		<div class="">
+			<p>© 2016 Cafe, All rights reserved.</p>
+		</div>
+	</section>
+	<!--END FOOTER SECTION-->
+
+	<!-- JS SCRIPTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="vendors/js/html5shiv.min.js"></script>
+	<script src="vendors/js/respond.min.js"></script>
+	<script src="vendors/js/selectivizr.min.js"></script>
+	<script src="resources/js/main.js"></script>
+
+</body>
+</html>

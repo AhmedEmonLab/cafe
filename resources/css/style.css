@@ -1,0 +1,438 @@
+/*===========================*/
+/*BASIC SETUP*/
+/*===========================*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.fix{
+	clear: both;
+	display: table;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+.box{
+	text-align: center;
+	padding:0 2.4%;
+}
+/*HEADING*/
+h1{
+	font-size: 72px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+h3{
+	font-size: 32px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+:focus{
+	outline: 0;
+}
+/*Button*/
+
+/*===========================*/
+/*REUSABLE COMPONENTS*/
+/*===========================*/
+.row{
+	max-width: 1040px;
+	margin: 0 auto;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+h2{
+	color: #000;
+	text-align: center;
+	font-size: 40px;
+    font-weight: 600;
+	text-transform: uppercase;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+}
+.title{
+	margin-bottom: 40px;
+}
+.title h2{
+	color: #dc961b;
+	font-size: 32px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+}
+/*===========================*/
+/*HEADER SECTION*/
+/*===========================*/
+header{
+	background:linear-gradient(rgba(135,80,156,0.0),rgba(135,80,156,0.0)), url(img/welcome-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+}
+/*===========================*/
+/*MAIN NAVIGATION*/
+/*===========================*/
+.menubar {
+    box-shadow: 0 1px 1px #938a8ab8;
+    font-family: inherit;
+}
+
+.menubar ul {
+  display: block;
+  text-align: center;
+  padding-top: 60px;
+  margin: 0;
+  list-style: none;
+}
+
+.menubar ul li {
+   display: inline-block;
+    width: 110px;
+    vertical-align: middle;
+   margin-bottom: -32px;
+}
+
+.menubar ul li a {
+  color: white;
+  padding: 0 15px 0 0;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-style: italic;
+}
+.logo_box{
+	margin-right: 60px !important;
+	margin-left: 60px !important;
+}
+.logo img {
+  margin: -25px 0px 47px auto;
+  display: block;
+  width:115px;
+}
+.welcome-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.welcome-content h1{
+	margin-bottom: 0px;
+	letter-spacing: -2px;
+	word-spacing: -3px;
+}
+/*--MOBILE MENU--*/
+.mobile-menu span{
+	color: #fff;
+	font-size: 40px;
+	float: right;
+	margin-top: 20px;
+	display: none;
+	margin-right: 20px;
+}
+.mobile-logo{
+	float: left;
+	display: none;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 72px;
+}
+.mobile-logo img{
+	width: 72px;
+}
+.mobile-menu span:hover{
+	cursor: pointer;
+}
+.mobile-overlay{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(41, 114, 125, 0.97);
+	z-index: 1;
+	overflow: hidden;
+	transition: 0.5s;
+	display: none;
+}
+.overlay-content{
+	position: relative;
+	top: 10%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.mobile-overlay a{
+	text-decoration: none;
+	display: block;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #bf8282;
+	padding: 10px 0;
+
+	font-weight: bold;
+}
+.mobile-overlay a:hover{
+	color: #fff;
+}
+.mobile-overlay .closebtn{
+	position: absolute;
+	right: 34px;
+	font-size: 60px;
+}
+.sticky .mobile-menu span{
+	margin-top: 4px;
+}
+/*===========================*/
+/*OUR FAVOURITES-SECTION*/
+/*===========================*/
+.favourites-section{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.favourites-bg-img_cmn{
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: cover;
+	position: relative;
+	height: 240px;
+}
+.favourites-bg-cmn:after{
+	position: absolute;
+	content: "";
+	opacity: .8;
+	background-color: #333; 
+}
+.favourites-bg-img{
+	background:linear-gradient(to bottom, #fff0 30%, #090909 100%), url(img/bg-img1.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	position: relative;
+}
+.favourites-bg-img2{
+	background:linear-gradient(to bottom, #fff0 30%, #090909 100%), url(img/bg-img2.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	position: relative;
+}
+.favourites-bg-img3{
+	background:linear-gradient(to bottom, #fff0 30%, #090909 100%), url(img/bg-img3.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	position: relative;
+}
+.favourites-bg-img4{
+	background:linear-gradient(to bottom, #fff0 30%, #090909 100%), url(img/bg-img4.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	position: relative;
+}
+.favourites-section h4{
+
+}
+.favourites-section p{
+	background: #000;
+	height: 95px;
+	color: #fff;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+}
+.single_card{
+	box-shadow: 0px 0px 8px 1px #514a4a;
+}
+.single_card h3{
+	text-transform: capitalize;
+	font-weight: 300;
+	font-size: 26px;
+}
+.single_card p{
+	padding-left: 10px;
+	font-size: 14px;
+	padding-top: 12px;
+}
+/*===========================*/
+/*OUR OUR TASTY MENU-SECTION*/
+/*===========================*/
+.testymenu-section{
+	background:linear-gradient(rgba(9, 8, 8, 0.7),rgba(9, 8, 8, 0.7)), url(img/testmenu-bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	position: relative;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.testymenu-section .title{
+	margin-bottom: 10px;
+}
+.menu_single_card{
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+.menu_single_card img{
+	height: 330px;
+	width: 300px;
+	border-radius: 6px;
+	position: relative;
+}
+.menu_single_card_img{
+/*	position: relative;
+*/}
+.text {
+  color: white;
+  font-size: 42px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+.text:after{
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 150px;
+	background-color: #fff;
+	top: 0px;
+	left: 50%;
+	margin-left: -75px;
+}
+.text:before{
+	position: absolute;
+	content: "";
+	height: 1px;
+	width: 150px;
+	background-color: #fff;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -75px;
+}
+.overlay {
+  position: absolute;
+  top: 7%;
+  bottom: 0;
+  left: 14%;
+  right: 0;
+  height: 86%;
+  width: 74%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #95720A91;
+  opacity: 1;
+  border: 1px solid orange;
+}
+/*===========================*/
+/*REVIEW-SECTION*/
+/*===========================*/
+.review-section{
+	background:linear-gradient(rgba(135, 80, 156, 0),rgba(135, 80, 156, 0)), url(img/rev-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: cover;
+	position: relative;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.review-box{
+	text-align: center;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+.review-box h5{
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+	position: relative;
+}
+.review-box p{
+	margin-top: 15px;
+}
+.review-box h5:after{
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 50px;
+	background-color: #0d0d0d;
+	top: 0px;
+	left: 50%;
+	margin-left: -25px;
+}
+/*===========================*/
+/*IMAGES-SECTION*/
+/*===========================*/
+.image-box-section{
+	
+}
+.img_row {
+  display: flex;
+  flex-wrap: wrap;/*
+  padding: 0 4px;*/
+}
+.column {
+  flex: 0%;/*
+  padding: 0 4px;*/
+}
+
+.column img {/*
+  margin-top: 8px;*/
+  vertical-align: middle;
+}
+
+.gallery-1{
+	width: 314px;
+	height: 400px;
+}
+.gallery-2{
+	width: 500px;
+	height: 200px;
+}
+.gallery-3{
+	width: 220px;
+	height: 200px;
+}
+.gallery-4{
+	width: 720px;
+	height: 200px;
+}
+.gallery-5{
+	width: 314px;
+	height: 400px;
+}
+/*===========================*/
+/*FOOTER-SECTION*/
+/*===========================*/
+.footer-section{
+	background: #000;
+	text-align: center;
+	padding: 20px 0;
+}
+.footer-section p{
+	color: #f7f3f3;
+	font-size: 13px;
+}
